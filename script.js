@@ -14,17 +14,17 @@ const contacts = [
     age: 50,
     email: "susanto@gmail.com",
     phone: "+81210550085",
-    address: "japan",
-    country: "konoha",
+    address: "osaka",
+    country: "japan",
   },
   {
     id: 3,
     name: "Muhammad Ronaldo",
     age: 39,
     email: "mronaldo@gmail.com",
-    address: "argentina",
+    address: "cibubur",
     phone: "+319742640382",
-    country: "konoha",
+    country: "argetntina",
   },
 ];
 
@@ -38,8 +38,9 @@ function listcontacts() {
  Email: ${contact.email}
  address: ${contact.address}
  Phone: ${contact.phone}
- citizen: ${contact.citizen}
+ country: ${contact.country}
 `);
   }
 }
+
 listcontacts();
