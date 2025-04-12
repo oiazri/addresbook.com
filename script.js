@@ -5,42 +5,42 @@ const contacts = [
     age: 30,
     email: "alexpraroro@gmail.com",
     phone: "+6281210550085",
-    address: "indomaret",
-    country: "konoha",
+    address: "Jakarta",
+    country: "Indonesia",
   },
   {
     id: 2,
-    name: "susanto",
+    name: "Susanto",
     age: 50,
     email: "susanto@gmail.com",
     phone: "+81210550085",
-    address: "osaka",
-    country: "japan",
+    address: "Osaka",
+    country: "Japan",
   },
   {
     id: 3,
     name: "Muhammad Ronaldo",
     age: 39,
     email: "mronaldo@gmail.com",
-    address: "cibubur",
     phone: "+319742640382",
-    country: "argetntina",
+    address: "Cibubur",
+    country: "Argentina",
   },
 ];
 
-function listcontacts() {
+function listContacts() {
   for (let index = 0; index < contacts.length; index++) {
     const contact = contacts[index];
 
     console.log(`
- Name: ${contact.name}
- age: ${contact.age} year old
- Email: ${contact.email}
- address: ${contact.address}
- Phone: ${contact.phone}
- country: ${contact.country}
+Name: ${contact.name}
+Age: ${contact.age} year old
+Email: ${contact.email}
+Address: ${contact.address}
+Phone: ${contact.phone}
+Country: ${contact.country}
 `);
   }
 }
 
-listcontacts();
+listContacts();
