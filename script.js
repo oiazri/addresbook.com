@@ -60,6 +60,10 @@ function addContact(name, age, email, phone, address, country) {
   contacts.push(newContact);
 }
 
+function searchContacts() {
+  // TODO: Use filter
+}
+
 addContact(
   "Siregar",
   30,
