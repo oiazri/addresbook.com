@@ -1,6 +1,6 @@
 const contacts = [
   {
-    Id: 1,
+    id: 1,
     name: "Alexandro Carlos",
     age: 30,
     email: "alexandrocarlos@gmail.com",
@@ -9,7 +9,7 @@ const contacts = [
     country: "Indonesia",
   },
   {
-    Id: 2,
+    id: 2,
     name: "Minato",
     age: 50,
     email: "minato@gmail.com",
@@ -18,7 +18,7 @@ const contacts = [
     country: "Japan",
   },
   {
-    Id: 3,
+    id: 3,
     name: "Rico Puji",
     age: 33,
     email: "ricopuji@gmail.com",
@@ -28,40 +28,44 @@ const contacts = [
   },
 ];
 
-function listContacts() {
-  for (let index = 0; index < contacts.length; index++) {
-    const contact = contacts[index];
-
+function displayContacts() {
+  contacts.forEach((contact) => {
     console.log(`
-Id: ${contact.Id}      
-Name: ${contact.name}
-Age: ${contact.age} year old
-Email: ${contact.email}
-Address: ${contact.address}
-Phone: ${contact.phone}
-Country: ${contact.country}
-`);
-  }
+      ID: ${contact.id}
+      Name: ${contact.name}
+      Age: ${contact.age} years old
+      Email: ${contact.email}
+      Address: ${contact.address}
+      Phone: ${contact.phone}
+      Country: ${contact.country}
+      `);
+  });
 }
 
 function addContact(name, age, email, phone, address, country) {
   const lastContact = contacts[contacts.length - 1];
-  const lastId = lastContact.Id;
+  const lastId = lastContact.id;
   const nextId = lastId + 1;
 
-  contacts.push({
-    Id: nextId,
+  const newContact = {
+    id: nextId,
     name,
     age,
     email,
     phone,
     address,
     country,
-  });
+  };
+
+  contacts.push(newContact);
+}
+
+function searchContacts() {
+  // TODO: Use filter
 }
 
 addContact(
-  "siregar",
+  "Siregar",
   30,
   "siregar@gmail.com",
   "Jakarta",
@@ -77,4 +81,4 @@ addContact(
   "Indonesia"
 );
 
-listContacts();
+displayContacts();
