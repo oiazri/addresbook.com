@@ -44,7 +44,7 @@ Country: ${contact.country}
   }
 }
 
- function addContact(name, age, email, phone, address, country) {
+function addContact(name, age, email, phone, address, country) {
   const lastContact = contacts[contacts.length - 1];
   const lastId = lastContact.Id;
   const nextId = lastId + 1;
@@ -60,7 +60,21 @@ Country: ${contact.country}
   });
 }
 
-addContact("siregar", 30, "siregar@gmail.com", "Jakarta", "+628122066789","Indonesia" )
-addContact("Muhammad Raihan", 21, "m.raihan@gmail.com", "Banda Aceh", "+62232244", "Indonesia" )
+addContact(
+  "siregar",
+  30,
+  "siregar@gmail.com",
+  "Jakarta",
+  "+628122066789",
+  "Indonesia"
+);
+addContact(
+  "Muhammad Raihan",
+  21,
+  "m.raihan@gmail.com",
+  "Banda Aceh",
+  "+62232244",
+  "Indonesia"
+);
 
 listContacts();
